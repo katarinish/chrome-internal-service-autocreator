@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fs-extra": "^8.1.0"
+    "fs-extra": "^8.1.0",
+    "git-config-path": "^2.0.0",
+    "parse-git-config": "^3.0.0"
   }
 }
