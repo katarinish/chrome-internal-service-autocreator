@@ -9,6 +9,8 @@ const getCurrentConfig = () => {
     return config.user;
 };
 
+const currentGitConfig = getCurrentConfig();
+
 module.exports = {
-    getCurrentConfig,
+    currentGitConfig,
 };

@@ -23,10 +23,11 @@ module.exports = {
     },
 
     serviceName: SERVICE_NAME,
+    userEmail: 'katarinish@yandex-team.ru',
 
     pathSeparator: PATH_SEPARATOR,
 
-    createFiles: (name) => ({
+    createFileNames: (name) => ({
         webui: {
             buildgn: 'BUILD.gn',
             yaowners: 'YAOWNERS',

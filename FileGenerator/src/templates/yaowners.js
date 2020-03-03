@@ -1,13 +1,13 @@
+const {currentGitConfig} = require('../gitConfig');
+const {userEmail} = require('../../config');
+
 /**
  * Creates a string of file owners
  *
- * @param {string[]} ownerLogins - List of owner's logins.
+ * @param {string[]} ownerEmails - List of owner's emails.
  * @returns {string}
  */
-
-// TODO: retrieve logins in a different way right in this function
-const createYaownersContent = (ownerLogins = ['boocmp']) => ownerLogins
-    .map(login => `${login}@yandex-team.ru`)
+const createYaownersContent = (ownerEmails = [currentGitConfig.email || userEmail]) => ownerEmails
     .join('\n');
 
 module.exports = {

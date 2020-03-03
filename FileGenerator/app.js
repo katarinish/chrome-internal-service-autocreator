@@ -3,10 +3,10 @@ const path = require('path');
 const {writeToPath} = require('./src/creator');
 const {fileNameToTemplateContentMap} = require('./src/templates');
 
-const {createFiles, path: configPaths} = require('./config');
+const {createFileNames, path: configPaths} = require('./config');
 
 const generateFiles = (serviceName) => {
-    const filesToGenerate = createFiles(serviceName);
+    const filesToGenerate = createFileNames(serviceName);
 
     Object.entries(filesToGenerate).forEach(([dirType, fileNames]) => {
         const rootDir = configPaths.root;
